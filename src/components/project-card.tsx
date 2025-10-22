@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -13,6 +14,9 @@ type ProjectCardProps = {
 };
 
 export function ProjectCard({ project }: ProjectCardProps) {
+  const hasLiveUrl = project.liveUrl && project.liveUrl !== '#';
+  const hasGithubUrl = project.githubUrl && project.githubUrl !== '#';
+
   return (
     <Card className="flex flex-col overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
       <CardHeader>
@@ -28,7 +32,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             data-ai-hint={project.image.imageHint}
           />
         </div>
-        <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
+        <p className="text-muted-foreground text-sm mb-4 flex-grow">{project.description}</p>
         <div className="flex flex-wrap gap-2">
           {project.technologies.map((tech) => (
             <Badge key={tech} variant="secondary">{tech}</Badge>
@@ -37,18 +41,22 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </CardContent>
       <CardFooter>
         <div className="flex w-full justify-end gap-2">
-          <Button asChild variant="outline" size="sm">
-            <Link href={project.githubUrl} target="_blank">
-              <Github />
-              GitHub
-            </Link>
-          </Button>
-          <Button asChild variant="outline" size="sm">
-            <Link href={project.liveUrl} target="_blank">
-              <ExternalLink />
-              Live Demo
-            </Link>
-          </Button>
+          {hasGithubUrl && (
+            <Button asChild variant="outline" size="sm">
+              <Link href={project.githubUrl} target="_blank">
+                <Github />
+                GitHub
+              </Link>
+            </Button>
+          )}
+          {hasLiveUrl && (
+            <Button asChild variant="outline" size="sm">
+              <Link href={project.liveUrl} target="_blank">
+                <ExternalLink />
+                Live Demo
+              </Link>
+            </Button>
+          )}
         </div>
       </CardFooter>
     </Card>

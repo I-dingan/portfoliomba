@@ -7,22 +7,52 @@
       "imageHint": "AI analysis"
     },
     {
-      "id": "project-2",
-      "description": "A dashboard UI for a server application",
-      "imageUrl": "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzb2NpYWwlMjBwbGF0Zm9ybXxlbnwwfHx8fDE3NjExNjExNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "social platform"
+      "id": "medium-build",
+      "description": "A person writing on a laptop, representing a blogging platform.",
+      "imageUrl": "https://images.unsplash.com/photo-1615216057273-cbef9ec5636a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxibG9nZ2luZyUyMHBsYXRmb3JtfGVufDB8fHx8MTc2MTE2NTM1Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blogging platform"
     },
     {
-      "id": "project-3",
-      "description": "Illustration of team collaboration",
-      "imageUrl": "https://images.unsplash.com/photo-1634910409614-71a507e13588?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhdXRvbWF0aW9uJTIwYm90fGVufDB8fHx8MTc2MTE2MTE0N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "automation bot"
+      "id": "facebook-build",
+      "description": "A social network connection graph.",
+      "imageUrl": "https://images.unsplash.com/photo-1603145733146-ae562a55031e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzb2NpYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc2MTA4NzI3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "social network"
     },
     {
-      "id": "project-4",
-      "description": "Data science visualization",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkYXRhJTIwc2NpZW5jZXxlbnwwfHx8fDE3NjExMDQ1NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "data science"
+      "id": "instagram-build",
+      "description": "A grid of photos.",
+      "imageUrl": "https://images.unsplash.com/photo-1546374976-5f5247d26d6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwaG90byUyMGdyaWR8ZW58MHx8fHwxNzYxMTU2NDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "photo grid"
+    },
+    {
+      "id": "whatsapp-build",
+      "description": "Chat bubbles on a smartphone screen.",
+      "imageUrl": "https://images.unsplash.com/photo-1480694313141-fce5e697ee25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaGF0JTIwYXBwfGVufDB8fHx8MTc2MTE0ODg3OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chat app"
+    },
+    {
+      "id": "hulu-build",
+      "description": "A person watching a movie on a large screen.",
+      "imageUrl": "https://images.unsplash.com/photo-1714623300280-038a07bab1fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdHJlYW1pbmclMjBzZXJ2aWNlfGVufDB8fHx8MTc2MTEwMDAyOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "streaming service"
+    },
+    {
+      "id": "google-build",
+      "description": "A search bar on a clean background.",
+      "imageUrl": "https://images.unsplash.com/photo-1593437886622-34881819f1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzZWFyY2glMjBlbmdpbmV8ZW58MHx8fHwxNzYxMTU1NjExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "search engine"
+    },
+    {
+      "id": "amazon-build",
+      "description": "An e-commerce website with product listings.",
+      "imageUrl": "https://images.unsplash.com/photo-1688561807381-05137151978f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxlY29tbWVyY2UlMjBzdG9yZXxlbnwwfHx8fDE3NjExNDM5MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ecommerce store"
+    },
+    {
+      "id": "deliveroo-build",
+      "description": "A food delivery person on a scooter.",
+      "imageUrl": "https://images.unsplash.com/photo-1615719413546-198b25453f85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmb29kJTIwZGVsaXZlcnl8ZW58MHx8fHwxNzYxMDY1NTU2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "food delivery"
     }
   ]
 }
