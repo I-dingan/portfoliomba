@@ -1,3 +1,22 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "project-1",
+      "description": "Abstract code visualization",
+      "imageUrl": "https://images.unsplash.com/photo-1610466896927-699424f3c86d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMGNvZGV8ZW58MHx8fHwxNzYxMTE2MDM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract code"
+    },
+    {
+      "id": "project-2",
+      "description": "A dashboard UI for a server application",
+      "imageUrl": "https://images.unsplash.com/photo-1698668975271-2ba9a323be6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzZXJ2ZXIlMjBkYXNoYm9hcmR8ZW58MHx8fHwxNzYxMTYxMDExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "server dashboard"
+    },
+    {
+      "id": "project-3",
+      "description": "Illustration of team collaboration",
+      "imageUrl": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWFtJTIwY29sbGFib3JhdGlvbnxlbnwwfHx8fDE3NjEwNzc2OTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team collaboration"
+    }
+  ]
 }
