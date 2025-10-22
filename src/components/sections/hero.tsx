@@ -11,10 +11,10 @@ export function Hero() {
             Ashwin Satheesh
           </h1>
           <h2 className="mt-3 font-headline text-2xl font-medium tracking-tight sm:text-4xl">
-            Full-Stack Developer & DevOps Enthusiast
+            Technical Project Management & Analytics
           </h2>
           <p className="mt-6 max-w-2xl mx-auto text-lg leading-8 text-muted-foreground">
-            Building robust applications and automating workflows. Passionate about creating seamless developer experiences and scalable systems.
+            Transforming complex business challenges into scalable solutions. Passionate about AI-driven innovations and continuous improvement.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button asChild size="lg">

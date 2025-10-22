@@ -21,10 +21,10 @@ export function Skills() {
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle className="font-headline">Methodologies & Principles</CardTitle>
+            <CardTitle className="font-headline">Management Skills</CardTitle>
           </CardHeader>
           <CardContent>
-            <SkillsChart data={SKILLS.methodologies} />
+            <SkillsChart data={SKILLS.management} />
           </CardContent>
         </Card>
       </div>

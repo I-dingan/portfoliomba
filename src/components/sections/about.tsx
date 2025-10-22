@@ -10,10 +10,10 @@ export function About() {
         />
         <div className="prose prose-lg mx-auto max-w-3xl text-left text-muted-foreground space-y-6">
           <p>
-            I am a dedicated Full-Stack Developer and DevOps enthusiast with a proven track record of designing, developing, and deploying high-quality software solutions. My expertise lies in bridging the gap between development and operations, fostering a culture of collaboration and continuous improvement.
+            Results-driven professional with a strong foundation in technical project management and analytics, adept at developing digital platforms that transform complex business challenges into scalable solutions.
           </p>
           <p>
-            With a deep understanding of Agile and Scrum methodologies, I excel in fast-paced environments, ensuring that projects are delivered on time and within scope. My proficiency in building and managing CI/CD pipelines has enabled teams to automate testing and deployment, significantly reducing time-to-market and enhancing product reliability. I am committed to writing clean, maintainable code and leveraging automation to build scalable and resilient systems.
+            Proven experience leading cross-functional teams to deliver web and mobile products, automate workflows, and implement AI-driven innovations in fast-paced environments. Skilled in driving program execution, ensuring quality deliverables, tracking schedules, and proactively identifying risks to enable continuous improvement.
           </p>
         </div>
       </div>

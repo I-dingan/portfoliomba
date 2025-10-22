@@ -4,7 +4,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Ashwin Satheesh Portfolio',
-  description: 'Portfolio of Ashwin Satheesh, a Full-Stack Developer and DevOps enthusiast.',
+  description: 'Portfolio of Ashwin Satheesh, a technical project manager and analytics professional.',
 };
 
 export default function RootLayout({

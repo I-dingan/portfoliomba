@@ -25,28 +25,37 @@ const getImage = (id: string): ImagePlaceholder => {
 export const PROJECTS = [
   {
     id: 1,
-    title: 'CI/CD Pipeline Automation',
-    description: 'A comprehensive CI/CD pipeline solution for a microservices-based application, reducing deployment times by 60% and improving developer productivity. Implemented using Jenkins, Docker, and Kubernetes.',
-    technologies: ['Jenkins', 'Docker', 'Kubernetes', 'Groovy', 'Helm'],
+    title: 'AI-Driven Skill Gap Analysis Platform',
+    description: 'Built and deployed an AI-Driven Skill Gap Analysis Platform for Engineering Students in the EV Industry using MERN stack and n8n automation. Engineered a data pipeline to normalize over 700 unique skills with 97% accuracy using transformer models.',
+    technologies: ['MERN', 'n8n', 'AI', 'Transformers', 'LLM'],
     image: getImage('project-1'),
     liveUrl: '#',
     githubUrl: '#',
   },
   {
     id: 2,
-    title: 'Agile Project Management Dashboard',
-    description: 'A real-time dashboard for tracking Agile sprints, monitoring team velocity, and visualizing burndown charts. Integrated with Jira API to provide seamless data synchronization.',
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Jira API'],
+    title: 'Scalable Social Platform',
+    description: 'Collaborated cross-functionally to deliver a scalable social platform, contributing to end-to-end project execution. Led frontend app development using React Native, while supporting backend development with Firebase and Google Cloud Platform.',
+    technologies: ['React Native', 'Firebase', 'GCP', 'TypeSense', 'ClickUp'],
     image: getImage('project-2'),
     liveUrl: '#',
     githubUrl: '#',
   },
   {
     id: 3,
-    title: 'Cloud Infrastructure Orchestration',
-    description: 'Designed and implemented a scalable and resilient cloud infrastructure on AWS using Terraform. Automated environment provisioning, configuration management, and implemented robust monitoring with Prometheus and Grafana.',
-    technologies: ['AWS', 'Terraform', 'Ansible', 'Prometheus', 'Grafana'],
+    title: 'Web Automation & Bot Development',
+    description: 'Developed a quiz bot using Selenium for automated interactions. Created Instagram bots for automated commenting and liking. Built a Twitter sentiment analysis bot to analyze and categorize tweets.',
+    technologies: ['Selenium', 'Python', 'Bot Development', 'Twitter API'],
     image: getImage('project-3'),
+    liveUrl: '#',
+    githubUrl: '#',
+  },
+  {
+    id: 4,
+    title: 'Data Science & Machine Learning Projects',
+    description: 'Conducted sentiment analysis on Swiggy and Google reviews using HDBSCAN. Engineered a skill similarity system using embeddings and developed demand forecasting models.',
+    technologies: ['Python', 'Machine Learning', 'HDBSCAN', 'Embeddings', 'Forecasting'],
+    image: getImage('project-4'),
     liveUrl: '#',
     githubUrl: '#',
   },
@@ -54,40 +63,59 @@ export const PROJECTS = [
 
 export const SKILLS = {
   technical: [
-    { name: 'JavaScript/TypeScript', level: 95 },
-    { name: 'React/Next.js', level: 90 },
-    { name: 'Node.js/Express', level: 85 },
-    { name: 'Python', level: 80 },
-    { name: 'Docker & Kubernetes', level: 90 },
-    { name: 'AWS/GCP', level: 85 },
-    { name: 'Terraform/IaC', level: 88 },
+    { name: 'Python/R/SQL', level: 90 },
+    { name: 'React/React Native/Next.js', level: 85 },
+    { name: 'Machine Learning', level: 80 },
+    { name: 'Tableau/Power BI', level: 90 },
+    { name: 'n8n automation', level: 88 },
+    { name: 'Firebase/Azure/GCP', level: 85 },
+    { name: 'Shopify/GA4', level: 82 },
   ],
-  methodologies: [
-    { name: 'Agile/Scrum', level: 95 },
-    { name: 'DevOps Principles', level: 98 },
-    { name: 'CI/CD', level: 92 },
-    { name: 'Test-Driven Development', level: 85 },
-    { name: 'Site Reliability Engineering', level: 80 },
+  management: [
+    { name: 'Agile Project Management', level: 95 },
+    { name: 'Technical Leadership', level: 92 },
+    { name: 'Problem Solving', level: 90 },
+    { name: 'Strategic Planning', level: 88 },
+    { name: 'Communication', level: 95 },
   ],
 };
 
 export const EXPERIENCE = [
   {
-    role: 'Senior DevOps Engineer',
-    company: 'Tech Solutions Inc.',
-    duration: '2020 - Present',
-    description: 'Led the design and implementation of CI/CD pipelines for multiple projects. Managed cloud infrastructure on AWS, optimizing for cost and performance. Championed the adoption of Agile methodologies and DevOps culture across teams, resulting in faster release cycles and improved product quality.',
+    role: 'AI Solutions Intern',
+    company: 'Autobot India',
+    duration: 'Apr 2025 - Jun 2025 (3 Months)',
+    description: 'Built and deployed AI-Driven Skill Gap Analysis Platform for Engineering Students in the EV Industry using MERN stack and n8n automation. Engineered a data pipeline to normalize over 700 unique skills with 97% accuracy using transformer models. Automated the generation of a 130,000+ question bank for personalized assessments using LLMs and n8n workflows.',
   },
   {
-    role: 'Full-Stack Developer',
-    company: 'Innovate Co.',
-    duration: '2018 - 2020',
-    description: 'Developed and maintained full-stack web applications using the MERN stack. Collaborated with cross-functional teams in an Agile environment to deliver high-quality software. Introduced containerization with Docker to streamline development and deployment processes.',
+    role: 'Self-Employed - Amazon Sales',
+    company: 'Icedpaw',
+    duration: 'Apr 2023 - Apr 2024 (13 Months)',
+    description: 'Engaged in entrepreneurial activities in Amazon Sales and Instagram Marketing.',
   },
   {
-    role: 'Software Engineer Intern',
-    company: 'CodeCrafters',
-    duration: '2017 - 2018',
-    description: 'Assisted in the development of a new client-facing platform. Gained hands-on experience with version control (Git), automated testing, and participated in daily Scrum meetings.',
+    role: 'App Development Intern',
+    company: 'XOOG, Bengaluru',
+    duration: 'Aug 2022 - Feb 2023 (7 Months)',
+    description: 'Collaborated cross-functionally to deliver a scalable social platform, contributing to end-to-end project execution. Managed project tasks in ClickUp, supporting Agile ceremonies. Led frontend app development using React Native, while supporting backend development with Firebase and Google Cloud Platform.',
+  },
+  {
+    role: 'Remote Engineer',
+    company: 'NTT Global, Bengaluru',
+    duration: 'Jun 2021 - Mar 2022 (10 Months)',
+    description: 'Provided remote IT support for key client operations. Managed Active Directory and Microsoft Azure services, including user permissions and license allocation. Administered remote servers and handled ITSM ticketing for efficient incident management.',
   },
 ];
+
+export const EDUCATION = [
+    {
+        degree: 'Master of Business Administration (MBA), Business Analytics',
+        institution: 'Christ University, Bengaluru',
+        duration: 'Jan 2024 - Jan 2026',
+    },
+    {
+        degree: 'Bachelor of Technology (B.Tech), Mechanical Engineering',
+        institution: 'SRM University, Kattankulathur',
+        duration: 'Jun 2016 - May 2020',
+    }
+]
