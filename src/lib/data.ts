@@ -13,7 +13,7 @@ export const NAV_LINKS = [
 
 export const SOCIAL_LINKS: { name: string; url: string; icon: LucideIcon }[] = [
   { name: 'GitHub', url: 'https://github.com/Ashwin-Satheesh', icon: Github },
-  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/ashwin-s-851919175/', icon: Linkedin },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/ashwin-satheesh-b1ab78161', icon: Linkedin },
   { name: 'Twitter', url: 'https://x.com/AshwinSatheesh9', icon: Twitter },
 ];
 
@@ -35,7 +35,7 @@ export const PROJECTS = [
   {
     id: 0,
     title: 'AI-Driven Skill Gap Analysis Platform',
-    description: 'Built and deployed an AI-Driven Skill Gap Analysis Platform for Engineering Students in the EV Industry using MERN stack and n8n automation. Engineered a data pipeline to normalize over 700 unique skills with 97% accuracy using transformer models.',
+    description: 'Built and deployed an AI-Driven Skill Gap Analysis Platform for Engineering Students in the EV Industry using MERN stack and n8n automation. Engineered a data pipeline to normalize over 700 unique skills with 97% accuracy using transformer models. Automated the generation of a 130,000+ question bank for personalized assessments using LLMs and n8n workflows.',
     technologies: ['MERN', 'n8n', 'AI', 'Transformers', 'LLM'],
     image: getImage('project-1'),
     liveUrl: 'https://autobotsreact.onrender.com/login',
