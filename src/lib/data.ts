@@ -12,7 +12,7 @@ export const NAV_LINKS = [
 ];
 
 export const SOCIAL_LINKS: { name: string; url: string; icon: LucideIcon }[] = [
-  { name: 'GitHub', url: 'https://github.com/Ashwin-Satheesh', icon: Github },
+  { name: 'GitHub', url: 'https://github.com/I-dingan', icon: Github },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/ashwin-satheesh-b1ab78161', icon: Linkedin },
   { name: 'Twitter', url: 'https://x.com/AshwinSatheesh9', icon: Twitter },
 ];
