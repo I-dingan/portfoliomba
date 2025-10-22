@@ -11,9 +11,9 @@ export const NAV_LINKS = [
 ];
 
 export const SOCIAL_LINKS: { name: string; url: string; icon: LucideIcon }[] = [
-  { name: 'GitHub', url: 'https://github.com', icon: Github },
-  { name: 'LinkedIn', url: 'https://linkedin.com', icon: Linkedin },
-  { name: 'Twitter', url: 'https://twitter.com', icon: Twitter },
+  { name: 'GitHub', url: 'https://github.com/Ashwin-Satheesh', icon: Github },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/ashwin-s-851919175/', icon: Linkedin },
+  { name: 'Twitter', url: 'https://x.com/AshwinSatheesh9', icon: Twitter },
 ];
 
 const getImage = (id: string): ImagePlaceholder => {
@@ -29,7 +29,7 @@ export const PROJECTS = [
     description: 'Built and deployed an AI-Driven Skill Gap Analysis Platform for Engineering Students in the EV Industry using MERN stack and n8n automation. Engineered a data pipeline to normalize over 700 unique skills with 97% accuracy using transformer models.',
     technologies: ['MERN', 'n8n', 'AI', 'Transformers', 'LLM'],
     image: getImage('project-1'),
-    liveUrl: '#',
+    liveUrl: 'https://autobotsreact.onrender.com/login',
     githubUrl: '#',
   },
   {
@@ -70,6 +70,8 @@ export const SKILLS = {
     { name: 'n8n automation', level: 88 },
     { name: 'Firebase/Azure/GCP', level: 85 },
     { name: 'Shopify/GA4', level: 82 },
+    { name: 'Microsoft Office 365', level: 90 },
+    { name: 'Active Directory', level: 80 },
   ],
   management: [
     { name: 'Agile Project Management', level: 95 },
@@ -85,7 +87,7 @@ export const EXPERIENCE = [
     role: 'AI Solutions Intern',
     company: 'Autobot India',
     duration: 'Apr 2025 - Jun 2025 (3 Months)',
-    description: 'Built and deployed AI-Driven Skill Gap Analysis Platform for Engineering Students in the EV Industry using MERN stack and n8n automation. Engineered a data pipeline to normalize over 700 unique skills with 97% accuracy using transformer models. Automated the generation of a 130,000+ question bank for personalized assessments using LLMs and n8n workflows.',
+    description: 'Built and deployed an AI-Driven Skill Gap Analysis Platform for Engineering Students in the EV Industry using MERN stack and n8n automation. Engineered a data pipeline to normalize over 700 unique skills with 97% accuracy using transformer models. Automated the generation of a 130,000+ question bank for personalized assessments using LLMs and n8n workflows.',
   },
   {
     role: 'Self-Employed - Amazon Sales',
@@ -118,4 +120,43 @@ export const EDUCATION = [
         institution: 'SRM University, Kattankulathur',
         duration: 'Jun 2016 - May 2020',
     }
-]
+];
+
+export const CERTIFICATIONS = [
+  'Microsoft Power BI Desktop for Business Intelligence-Udemy',
+  'The Complete Python Developer-Udemy',
+  'RA: Data Science and Supply Chain analytics. A-Z with Python_Udemy',
+  'The Business Intelligence Analyst Course 2025-Udemy',
+];
+
+export const OTHER_PROJECTS = [
+  {
+    category: 'Web Automation & Bot Development',
+    items: [
+      'Developed a quiz bot using Selenium for automated interactions.',
+      'Created Instagram bots for automated commenting and liking.',
+      'Built a Twitter sentiment analysis bot to analyze and categorize tweets.',
+    ]
+  },
+  {
+    category: 'Data Science & Machine Learning',
+    items: [
+      'Conducted sentiment analysis and customer segmentation on Swiggy and Google reviews using clustering algorithms like HDBSCAN.',
+      'Engineered a skill similarity system using embeddings to match related skills.',
+      'Developed demand forecasting models.',
+    ]
+  },
+  {
+    category: 'E-commerce & Workflow Automation',
+    items: [
+      'Managed end-to-end Shopify store creation and setup, including GA4 integration for advanced analytics.',
+      'Designed and implemented a question bank generation system using n8n automation.',
+    ]
+  },
+  {
+    category: 'Front-End Development',
+    items: [
+      'Developed React clones of major web platforms including Facebook, Instagram, Amazon, and Hulu to mimic their UI and core functionalities.',
+    ]
+  }
+];
