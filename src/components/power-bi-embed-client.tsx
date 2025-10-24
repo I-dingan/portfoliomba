@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useRef, useEffect, useState } from "react";
+import React, { useState } from "react";
 import { PowerBIEmbed } from "powerbi-client-react";
-import { models, Report } from "powerbi-client";
+import { models, Embed, Report } from "powerbi-client";
 
 type PowerBiEmbedClientProps = {
   report: {
@@ -14,18 +14,28 @@ type PowerBiEmbedClientProps = {
 };
 
 export function PowerBiEmbedClient({ report }: PowerBiEmbedClientProps) {
-  const [layoutAvailable, setLayoutAvailable] = useState(false);
+  const [mobileAvailable, setMobileAvailable] = useState<boolean | null>(null);
 
-  const handleEmbedded = (embeddedReport: Report) => {
-    embeddedReport.getPages().then((pages) => {
-      // Check first page for mobile layout
-      if (pages.length > 0) {
-        pages[0].hasLayout(models.LayoutType.MobilePortrait).then((hasMobile) => {
-          setLayoutAvailable(hasMobile);
-          if (!hasMobile) {
-            console.warn("Mobile layout not available, falling back to desktop layout.");
-          }
-        });
+  const handleEmbedded = async (embeddedComponent: Embed) => {
+    // cast to Report to access report-specific methods
+    const embeddedReport = embeddedComponent as Report;
+
+    // Wait until the report is fully loaded
+    embeddedReport.on("loaded", async () => {
+      try {
+        const pages = await embeddedReport.getPages();
+        const hasMobile = await pages[0].hasLayout(models.LayoutType.MobilePortrait);
+
+        setMobileAvailable(hasMobile);
+
+        if (hasMobile) {
+          console.log("✅ Mobile layout applied");
+        } else {
+          console.warn("⚠️ Mobile layout not available. Desktop layout will be shown.");
+        }
+      } catch (err) {
+        console.error("Error checking mobile layout:", err);
+        setMobileAvailable(false);
       }
     });
   };
@@ -40,19 +50,27 @@ export function PowerBiEmbedClient({ report }: PowerBiEmbedClientProps) {
           accessToken: report.accessToken || "",
           tokenType: models.TokenType.Embed,
           settings: {
-            layoutType: layoutAvailable
-              ? models.LayoutType.MobilePortrait
-              : models.LayoutType.MobileLandscape, // fallback
-            panes: {
-              filters: { visible: false },
-              pageNavigation: { visible: false },
-            },
+            layoutType: models.LayoutType.MobilePortrait, // always attempt mobile layout
+            panes: { filters: { visible: false }, pageNavigation: { visible: false } },
             background: models.BackgroundType.Transparent,
           },
         }}
+        getEmbeddedComponent={handleEmbedded} // callback to get report instance
         cssClassName="absolute top-0 left-0 h-full w-full border-0 rounded-md"
-        getEmbeddedComponent={handleEmbedded}
       />
+
+      {/* Show mobile layout status */}
+      {mobileAvailable !== null && (
+        <div
+          className={`mt-4 text-center font-medium ${
+            mobileAvailable ? "text-green-600" : "text-red-600"
+          }`}
+        >
+          {mobileAvailable
+            ? "✅ Mobile layout available"
+            : "⚠️ Mobile layout not available. Desktop version shown."}
+        </div>
+      )}
     </div>
   );
 }
