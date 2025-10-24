@@ -8,6 +8,8 @@ export const NAV_LINKS = [
   { name: 'Projects', href: '#projects' },
   { name: 'Skills', href: '#skills' },
   { name: 'Experience', href: '#experience' },
+  { name: 'Education', href: '#education' },
+  { name: 'Dashboards', href: '#power-bi-reports' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -176,6 +178,16 @@ export const EDUCATION = [
         duration: 'Jun 2016 - May 2020',
     }
 ];
+
+export const POWER_BI_REPORTS = [
+  {
+    id: "power-bi-1",
+    title: "HR Analytics Dashboard",
+    description: "An interactive dashboard providing insights into HR data, including employee demographics, turnover rates, and recruitment metrics. This report helps in making data-driven decisions for human resource management.",
+    embedUrl: "https://app.powerbi.com/view?r=eyJrIjoiM2E3MDJkYjItMWQyMC00YjI5LWE5MGItNzFkYjcxYjEwMGU5IiwidCI6IjM3ZDFjYWJkLTc4YTMtNGU2Mi05MjY0LTVkZDEyOTc0Y2U5MyJ9"
+  }
+];
+
 
 export const CERTIFICATIONS = [
   'Microsoft Power BI Desktop for Business Intelligence-Udemy',

@@ -7,6 +7,7 @@ import { Experience } from "@/components/sections/experience";
 import { Education } from "@/components/sections/education";
 import { Contact } from "@/components/sections/contact";
 import { Footer } from "@/components/footer";
+import { PowerBiReports } from "@/components/sections/power-bi-reports";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Skills />
         <Experience />
         <Education />
+        <PowerBiReports />
         <Contact />
       </main>
       <Footer />
