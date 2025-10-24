@@ -55,9 +55,9 @@
       "imageHint": "food delivery"
     },
     {
-      "id": "Finance Dashboard",
+      "id": "finance-dashboard",
       "description": "Finance analytics dashboard showing charts and graphs.",
-      "imageUrl": "/images/Finance Dashboard.jpg",
+      "imageUrl": "/images/Finance Dashboard.jpg?v=2",
       "imageHint": "finance analysis"
     }
   ]
