@@ -57,7 +57,7 @@
     {
       "id": "hr-dashboard",
       "description": "HR analytics dashboard showing charts and graphs.",
-      "imageUrl": "https://picsum.photos/seed/hr-dashboard/600/400",
+      "imageUrl": "/images/hr-dashboard.png",
       "imageHint": "HR analytics"
     }
   ]

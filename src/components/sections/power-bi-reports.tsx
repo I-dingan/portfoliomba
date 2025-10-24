@@ -24,7 +24,8 @@ export function PowerBiReports() {
                   <Image
                     src={report.image.imageUrl}
                     alt={report.image.description}
-                    fill
+                    width={600}
+                    height={400}
                     className="object-cover rounded-md"
                     data-ai-hint={report.image.imageHint}
                   />
