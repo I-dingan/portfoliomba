@@ -57,8 +57,14 @@
     {
       "id": "finance-dashboard",
       "description": "Finance analytics dashboard showing charts and graphs.",
-      "imageUrl": "/images/Finance Dashboard.jpg?v=2",
+      "imageUrl": "/images/Finance Dashboard.jpg",
       "imageHint": "finance analysis"
+    },
+    {
+      "id": "hr-dash",
+      "description": "HR analytics dashboard showing charts and graphs.",
+      "imageUrl": "/images/hr-dashboard.png",
+      "imageHint": "hr analysis"
     }
   ]
 }
