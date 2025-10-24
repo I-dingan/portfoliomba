@@ -11,8 +11,8 @@ import { PowerBiReports } from "@/components/sections/power-bi-reports";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen w-full flex-col">
-      <div className="mx-auto w-full max-w-screen-2xl">
+    <div className="flex min-h-screen w-full flex-col items-center">
+      <div className="w-full">
         <Header />
         <main className="flex-1">
           <Hero />
