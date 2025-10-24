@@ -1,47 +1,58 @@
-'use client';
+"use client";
 
-import { PowerBIEmbed } from 'powerbi-client-react';
-import { models } from 'powerbi-client';
-import type { POWER_BI_REPORTS } from '@/lib/data';
+import React, { useRef, useEffect, useState } from "react";
+import { PowerBIEmbed } from "powerbi-client-react";
+import { models, Report } from "powerbi-client";
 
 type PowerBiEmbedClientProps = {
-    report: (typeof POWER_BI_REPORTS)[number];
+  report: {
+    reportId: string;
+    embedUrl: string;
+    title: string;
+    accessToken?: string;
+  };
 };
 
 export function PowerBiEmbedClient({ report }: PowerBiEmbedClientProps) {
-    if (!report.embedUrl || !report.reportId) {
-        return <div className="text-red-500">Power BI report configuration is missing.</div>;
-    }
+  const [layoutAvailable, setLayoutAvailable] = useState(false);
 
-    return (
-        <div className="relative mx-auto w-full max-w-6xl overflow-hidden rounded-lg border bg-card shadow-lg pt-[125%] sm:pt-0 sm:h-[80vh]">
-            <PowerBIEmbed
-                embedConfig={{
-                    type: 'report',
-                    id: report.reportId,
-                    embedUrl: report.embedUrl,
-                    accessToken: '', // For RLS and other scenarios, you would fetch a token
-                    tokenType: models.TokenType.Embed, // Use models.TokenType.Aad for SaaS embedding
-                    settings: {
-                        panes: {
-                            filters: {
-                                expanded: false,
-                                visible: false
-                            },
-                            pageNavigation: {
-                                visible: false
-                            }
-                        },
-                        background: models.BackgroundType.Transparent,
-                    }
-                }}
-                eventHandlers={
-                    new Map([
-                        ['error', function (event) { console.error(event.detail); }],
-                    ])
-                }
-                cssClassName="absolute top-0 left-0 h-full w-full rounded-md border-0"
-            />
-        </div>
-    );
+  const handleEmbedded = (embeddedReport: Report) => {
+    embeddedReport.getPages().then((pages) => {
+      // Check first page for mobile layout
+      if (pages.length > 0) {
+        pages[0].hasLayout(models.LayoutType.MobilePortrait).then((hasMobile) => {
+          setLayoutAvailable(hasMobile);
+          if (!hasMobile) {
+            console.warn("Mobile layout not available, falling back to desktop layout.");
+          }
+        });
+      }
+    });
+  };
+
+  return (
+    <div className="relative w-full max-w-3xl mx-auto overflow-hidden rounded-lg border bg-card shadow-lg pt-[125%]">
+      <PowerBIEmbed
+        embedConfig={{
+          type: "report",
+          id: report.reportId,
+          embedUrl: report.embedUrl,
+          accessToken: report.accessToken || "",
+          tokenType: models.TokenType.Embed,
+          settings: {
+            layoutType: layoutAvailable
+              ? models.LayoutType.MobilePortrait
+              : models.LayoutType.MobileLandscape, // fallback
+            panes: {
+              filters: { visible: false },
+              pageNavigation: { visible: false },
+            },
+            background: models.BackgroundType.Transparent,
+          },
+        }}
+        cssClassName="absolute top-0 left-0 h-full w-full border-0 rounded-md"
+        getEmbeddedComponent={handleEmbedded}
+      />
+    </div>
+  );
 }
