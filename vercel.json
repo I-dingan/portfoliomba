@@ -2,8 +2,9 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "destination": "https://ashwinsatheesh.in",
+      "destination": "https://www.ashwinsatheesh.in/$1",
       "permanent": true
     }
   ]
 }
+
