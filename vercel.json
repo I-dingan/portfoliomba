@@ -2,9 +2,11 @@
   "redirects": [
     {
       "source": "/(.*)",
+      "has": [
+        { "type": "host", "value": "portfoliomba.vercel.app" }
+      ],
       "destination": "https://www.ashwinsatheesh.in/$1",
       "permanent": true
     }
   ]
 }
-
