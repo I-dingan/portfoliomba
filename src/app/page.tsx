@@ -11,19 +11,21 @@ import { PowerBiReports } from "@/components/sections/power-bi-reports";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <Header />
-      <main className="flex-1">
-        <Hero />
-        <About />
-        <PowerBiReports />
-        <Projects />
-        <Skills />
-        <Experience />
-        <Education />
-        <Contact />
-      </main>
-      <Footer />
+    <div className="flex min-h-screen w-full flex-col">
+      <div className="mx-auto w-full max-w-screen-2xl">
+        <Header />
+        <main className="flex-1">
+          <Hero />
+          <About />
+          <PowerBiReports />
+          <Projects />
+          <Skills />
+          <Experience />
+          <Education />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }
