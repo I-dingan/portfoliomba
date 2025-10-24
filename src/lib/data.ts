@@ -184,7 +184,7 @@ export const POWER_BI_REPORTS = [
     id: "power-bi-1",
     title: "Finance Dashboard",
     description: "An interactive dashboard providing insights into financial performance, including revenue, expenses, and profitability metrics. This report helps in making data-driven decisions for financial management.",
-    embedUrl:"https://app.powerbi.com/view?r=eyJrIjoiMjRiMTk5MTItOTc2YS00MjliLThlMDctNmY5YzEyNmYyMTExIiwidCI6IjEwZGU2MjRjLWMyM2ItNDA2NS1hMjFlLTg5MWE5Y2YzZTc3ZCJ9&embedImagePlaceholder=true",
+    embedUrl:"https://app.powerbi.com/view?r=eyJrIjoiNGQ3YjZmZjMtZjA3Ny00MTBlLTk2ZmUtZjg3NjU1MmJjZjJkIiwidCI6IjEwZGU2MjRjLWMyM2ItNDA2NS1hMjFlLTg5MWE5Y2YzZTc3ZCJ9",
     image: getImage("finance-dashboard")
   }
 ];
