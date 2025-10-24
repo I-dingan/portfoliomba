@@ -55,10 +55,10 @@
       "imageHint": "food delivery"
     },
     {
-      "id": "hr-dashboard",
-      "description": "HR analytics dashboard showing charts and graphs.",
-      "imageUrl": "/images/hr-dashboard.png",
-      "imageHint": "HR analytics"
+      "id": "Finance Dashboard",
+      "description": "Finance analytics dashboard showing charts and graphs.",
+      "imageUrl": "/images/Finance Dashboard.jpg",
+      "imageHint": "finance analysis"
     }
   ]
 }

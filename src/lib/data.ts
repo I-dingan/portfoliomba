@@ -182,10 +182,10 @@ export const EDUCATION = [
 export const POWER_BI_REPORTS = [
   {
     id: "power-bi-1",
-    title: "HR Analytics Dashboard",
+    title: "Finance Dashboard",
     description: "An interactive dashboard providing insights into HR data, including employee demographics, turnover rates, and recruitment metrics. This report helps in making data-driven decisions for human resource management.",
     embedUrl:"https://app.powerbi.com/view?r=eyJrIjoiMjRiMTk5MTItOTc2YS00MjliLThlMDctNmY5YzEyNmYyMTExIiwidCI6IjEwZGU2MjRjLWMyM2ItNDA2NS1hMjFlLTg5MWE5Y2YzZTc3ZCJ9&embedImagePlaceholder=true",
-    image: getImage('hr-dashboard')
+    image: getImage('Finance Dashboard')
   }
 ];
 
