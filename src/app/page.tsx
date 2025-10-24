@@ -16,11 +16,11 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <About />
+        <PowerBiReports />
         <Projects />
         <Skills />
         <Experience />
         <Education />
-        <PowerBiReports />
         <Contact />
       </main>
       <Footer />
