@@ -187,7 +187,16 @@ export const POWER_BI_REPORTS = [
     embedUrl:"https://app.powerbi.com/view?r=eyJrIjoiNTRiNTUyMjAtOGI0ZC00ZTg3LTk1ZTAtYTY2ZDNmOGFhMjA5IiwidCI6IjEwZGU2MjRjLWMyM2ItNDA2NS1hMjFlLTg5MWE5Y2YzZTc3ZCJ9",
     reportId: "4d7b6ff3-f077-410e-96fe-f876552bcf2d",
     image: getImage("finance-dashboard")
-  }
+  },
+  {
+  id: "power-bi-2",
+  title: "Threat Analysis Dashboard",
+  description: "A cybersecurity threat analysis dashboard that visualizes network anomalies, potential intrusions, and threat patterns over time. Helps analysts monitor and respond to security incidents effectively.",
+  embedUrl: "https://app.powerbi.com/view?r=eyJrIjoiOTZmYWFkNDktNGVhNC00YjdlLWJkNmItNmQxNmUzZGNlYzMwIiwidCI6IjEwZGU2MjRjLWMyM2ItNDA2NS1hMjFlLTg5MWE5Y2YzZTc3ZCJ9",
+  reportId: "96faad49-4ea4-4b7e-bd6b-6d16e3dcec30",
+  image: getImage("threat-analysis-dashboard")
+}
+
 ];
 
 
